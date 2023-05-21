@@ -1,0 +1,15 @@
+.App{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+.AppGlass{
+    display: grid;
+    height: 100%;
+    width: 100%;
+     background-color: rgb(238, 234, 234);
+    overflow: hidden;
+    grid-template-columns: 11rem  auto;
+}

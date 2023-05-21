@@ -1,0 +1,56 @@
+.main {
+    background: url("../../assets/Images/login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.all_accounts{
+    width: 100vw;
+    height: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 4px solid white; */
+    
+}
+.b_accounts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 800px;
+}
+.account_div{
+    width: 500px;
+    height: 410px;
+  
+    
+    background: rgb(252, 252, 252);
+
+    border-radius: 8px;
+    /* margin-right: 160px; */
+    border: 2px solid rgb(131, 131, 131);
+    margin: auto;
+
+}
+.account_div:hover{
+    /* background: #ccc; */
+}
+.account_div p{
+    background: linear-gradient(to right, #00b09b, #96c93d);
+    padding: 16px 10px;
+    position: relative;
+    top: 27%;
+    margin-top: 30px;
+    margin: 0 20px;
+    border-radius: 28px;
+    text-align: center;
+}
+.avt{
+    width: 220px;
+    height: 220px;
+    margin: 36px 86px 0px 72px;
+}
