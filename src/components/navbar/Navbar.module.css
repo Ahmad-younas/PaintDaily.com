@@ -244,7 +244,7 @@ button.LoginBtn{
     height:50px;
     width: 50px;
     position:absolute;
-    left:500px;
+    left:300px;
     top:26px;
     cursor:pointer;
     /* border: 2px solid red; */
@@ -258,7 +258,7 @@ button.LoginBtn{
     display: none;
     top:60px;
     z-index:35;
-    left:420px;
+    left:220px;
     border-radius:4px;
 
 }

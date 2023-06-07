@@ -17,7 +17,7 @@ const Exterior = () => {
     useEffect(() => {
       axios({
         method: 'GET',
-        url: 'http://localhost:9090/api/addproducts',
+        url: 'http://localhost:9090/api/getAllproducts',
       }).then((res) => {
         console.log(res.data);
         Setdata(res.data);
@@ -31,6 +31,7 @@ const Exterior = () => {
     const Enamel = data.filter((dta)=>{
         return (dta.selectCategory === "Enamel Paint")
       })
+      console.log("Enamel Paints",Enamel);
       const [currentPage, setCurrentPage] = useState(1)
       const recordsPerPage = 12;
       const lastindex = currentPage*recordsPerPage;
@@ -66,7 +67,7 @@ const Exterior = () => {
                         <div key={index} style={{width:"80%"}}>
                             <span className={Style.code_color}>Code: {dta.productColorName}</span>
                         <div className={Style.image_box}>
-                            <img className="" src={dta.Img}/>
+                            <img className="" src={dta.productImage}/>
                         </div>
                         
                         <div className={Style.prod_title}>
@@ -80,7 +81,7 @@ const Exterior = () => {
 
                           <div className={Style.bottom_line} style={{ color: "Black" }}>
                             
-                             <Star stars={4}/>
+                          <Star stars={dta.totalRating}/>
                              {/* <Link to ="#" className={Style.rev}>Reviews</Link> */}
                              <p className={Style.product_price}>Rs {dta.price}</p>
                           </div>

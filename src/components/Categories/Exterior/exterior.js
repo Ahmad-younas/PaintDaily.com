@@ -73,10 +73,6 @@ const Exterior = () => {
                             <p style={{color:"Black"}}>{dta.productTitle}</p>
                         </div>
 
-
-
-
-
                         <div className={Style.desc_box}>
                         <span style={{ color: '#6e6d6a', fontSize: '18px', paddingLeft: '22px', paddingTop: '150px'  }}>{dta.productWeight}</span>
                       </div>

@@ -50,6 +50,7 @@
     width: 120%;
     margin-left: 1.5%;
     /* padding: 2% 0; */
+    text-decoration: none;
 }
 .others{
     display: flex;
@@ -74,18 +75,19 @@
 Link{
     color: black;
 }
-.code_color{
+span.code_color{
     color: grey;
     margin-left: 10%;
     font-size: 16px;
     font-weight: 600;
+    text-decoration: none;
 }
 .search {
     width: 100%;
     display: flex;
     position: absolute;
-    top: 93%;
-    left: 36%;
+    top: 115%;
+    left: 32%;
   }
   
   .searchTerm {

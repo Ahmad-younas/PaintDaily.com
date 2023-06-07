@@ -50,6 +50,9 @@
     cursor: pointer;
 
 }
+.itemLinks{
+    color: white;
+}
 .itemLinks:hover {
     color: white;
 

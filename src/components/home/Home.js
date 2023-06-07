@@ -108,6 +108,8 @@ const Home = () => {
   const Painting = data.filter((dta)=>{
     return (dta.selectCategory === "Painting Tools")
   })
+
+  console.log("PaintingTool", Painting);
   const Emulsion = data.filter((dta)=>{
     return (dta.selectCategory === "Emulsion Paint")
   })
@@ -118,22 +120,14 @@ const Home = () => {
   console.log("ExteriorPaint",ExteriorPaint);
 
 
-
-
-
-
   return (
       <React.Fragment>
 
         <Navbar />
         
 
-
         <ErrorBoundary FallbackComponent={ErrorFallback}>
           <main className={Style.main}>
-
-
-
 
             <div id="carouselExampleControls" className="carousel slide slide-top" data-bs-ride="carousel">
               <div className="carousel-inner">
@@ -494,7 +488,7 @@ const Home = () => {
                     <div className={Style.product_section}>
                       <span style={{ color: '#6e6d6a', fontSize: '16px', paddingLeft: '22px', fontWeight: '600' }}>Code: {dta.productColorName}</span>
                       <div className={Style.image_box}>
-                        <img className={Style.product_img} src={dta.productColorImage} />
+                        <img className={Style.product_img} src={dta.productImage} />
                       </div>
                       <div className={Style.desc_box}>
                         <p style={{ color: "Black" }}>{dta.productTitle}</p>
@@ -546,7 +540,7 @@ const Home = () => {
                     <div className={Style.product_section}>
                       <span style={{ color: '#6e6d6a', fontSize: '16px', paddingLeft: '22px', fontWeight: '600' }}>Code: {dta.productColorName}</span>
                       <div className={Style.image_box}>
-                        <img className={Style.product_img} src={dta.Img} />
+                        <img className={Style.product_img} src={dta.productColorImage} />
                       </div>
                       <div className={Style.desc_box}>
                         <p style={{ color: "Black" }}>{dta.productTitle}</p>
@@ -599,19 +593,13 @@ const Home = () => {
                     <div className={Style.product_section}>
                       <span style={{ color: '#6e6d6a', fontSize: '16px', paddingLeft: '22px', fontWeight: '600' }}>Code: {dta.productColorName}</span>
                       <div className={Style.image_box}>
-                        <img className={Style.product_img} src={data.Img} />
+                        <img className={Style.product_img} src={dta.productImage} />
                       </div>
                       <div className={Style.desc_box}>
                         <p style={{ color: "Black" }}>{dta.productTitle}</p>
                       </div>
                       <div className={Style.bottom_box}>
-                        <div className={Style.review_box}>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                        </div>
+                      <Star stars={dta.totalRating}/>
                         <div className={Style.price_box} style={{ color: "Black" }}>
                           <p>Rs {dta.price}</p>
                         </div>
@@ -629,7 +617,7 @@ const Home = () => {
              <div className={Style.cat_header}>
               <h2 id="category" className={Style.most_selling_heading}>Enamel Paints</h2>
               <div className={Style.view_btn3}>
-                <Link style={{color: "white"}}  to='/PaintingTool'>View All</Link>
+                <Link style={{color: "white"}}  to='/Enamel'>View All</Link>
               </div>
             </div>
             <Swiper
@@ -651,7 +639,7 @@ const Home = () => {
                     <div className={Style.product_section}>
                       <span style={{ color: '#6e6d6a', fontSize: '16px', paddingLeft: '22px', fontWeight: '600' }}>Code: {dta.productColorName}</span>
                       <div className={Style.image_box}>
-                        <img className={Style.product_img} src={data.Img} />
+                        <img className={Style.product_img} src={dta.productColorImage} />
                       </div>
                       <div className={Style.desc_box}>
                         <p style={{ color: "Black" }}>{dta.productTitle}</p>
@@ -677,7 +665,7 @@ const Home = () => {
              <div className={Style.cat_header}>
               <h2 id="category" className={Style.most_selling_heading}>Emulsion Paint</h2>
               <div className={Style.view_btn2}>
-                <Link style={{color: "white"}}  to='/PaintingTool'>View All</Link>
+                <Link style={{color: "white"}}  to='/Emulsion'>View All</Link>
               </div>
             </div>
             <Swiper

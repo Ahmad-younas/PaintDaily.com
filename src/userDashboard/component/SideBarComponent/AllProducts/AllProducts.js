@@ -16,7 +16,7 @@ import { ToastContainer, toast } from 'react-toastify';
 function AllProducts(props) {
     const post = useSelector((state)=>state.SellerPosts);
     const id = post.sellerId;
-    console.log(post.sellerId);
+    console.log("sellerid",post.sellerId);
     const [data, Setdata] = useState([]);
     const [getid, setId] =  useState([]);
     const [check, SetCheck] = useState(false);
@@ -76,13 +76,6 @@ function AllProducts(props) {
                                     <form
                                         className="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                                         <div className="input-group mx-lg-3">
-                                            {/* <input type="text" className="form-control bg-white border-0 small" placeholder="Search for..."
-                                                aria-label="Search" aria-describedby="basic-addon2" style={{ boxShadow: '0px 10px 15px -3px rgba(0,0,0,0.1)' }} />
-                                            <div className="input-group-append">
-                                                <button className="btn btn-primary" type="button">
-                                                    <i className="fas fa-search fa-sm"></i>
-                                                </button>
-                                            </div> */}
                                         </div>
                                     </form>
                                 </div>
@@ -102,11 +95,11 @@ function AllProducts(props) {
                                         <tbody>
                                             {data.map((dta,index) => (
                                                 <tr key={index}>
-                                                    <td><a style={{ color: 'black', paddingTop: "22px", fontSize: '20px', fontWeight: 'bold' }} href="#">{dta.id}</a></td>
+                                                    <td><span style={{ color: 'black', paddingTop: "16%", fontSize: '20px', fontWeight: 'bold' }} >{dta.id}</span></td>
                                                     <td style={{ paddingTop: '30px', paddingLeft: '22px', fontSize: '20px', fontWeight: 'bold' }}>{dta.productTitle}</td>
-                                                    <td><Avatar src={dta.Img} size={50} /></td>
-                                                    <td style={{ paddingTop: "30px" }}><button className={"btn btn-success"} type={"button"}><Link  to={`/edit/${dta.id}`}>Edit</Link></button></td>
-                                                    <td style={{ paddingTop: "30px" }}><button className={"btn btn-success"} type={"button"}><Link to={`/View/${dta.id}`}>View</Link></button></td>
+                                                    <td><Avatar src={dta.productImage} size={50} /></td>
+                                                    <td style={{ paddingTop: "30px" }}><button className={"btn btn-success"} type={"button"}><Link style={{textDecoration: 'none', color: 'white'}}  to={`/edit/${dta.id}`}>Edit</Link></button></td>
+                                                    <td style={{ paddingTop: "30px" }}><button className={"btn btn-success"} type={"button"}><Link style={{textDecoration: 'none', color: 'white'}}  to={`/View/${dta.id}`}>View</Link></button></td>
                                                     <td style={{ paddingTop: "30px" }}><button type="button" className="btn btn-danger" onClick={()=>getId(dta.id)} data-bs-toggle="modal" data-bs-target="#staticBackdrop">Remove</button></td>
                                                      
                                                 </tr>

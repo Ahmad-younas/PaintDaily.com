@@ -33,7 +33,7 @@
     text-align: center;
 }
 .form_lbl{
-    width: 180px;
+    width: 140px;
     margin-left: 40px;
     font-size: 18px;
 }
@@ -65,7 +65,7 @@
 
 .create_acc{
     display: flex;
-    margin-left: 145px;
+    margin-left: 105px;
     margin-top: 12px;
     font-size: 17px;
 }

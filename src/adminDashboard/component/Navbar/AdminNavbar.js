@@ -1,7 +1,8 @@
 import React from 'react';
 import Avatar from "react-avatar";
 import { Link } from 'react-router-dom';
-import Style from './adminNavbar.module.css'
+import Style from './adminNavbar.module.css';
+import user from '../../assets/user.png';
 function AdminNavbar (props) {
 
     const handleLogout = ()=>{
@@ -21,9 +22,10 @@ function AdminNavbar (props) {
                 </li>
                 <li className="nav-item dropdown no-arrow ">
                     <div className="dropdown">
-                        <Avatar  name={"B"} size={"50px"} round={true} style={{marginRight:'20px'}} />
-
-                <div className={Style.Content}>
+                        {/* <Avatar  name={"B"} size={"50px"} round={true} style={{marginRight:'20px'}} /> */}
+                        <div className="wrap">
+              <div className={Style.Content}>
+                <img className={Style.Profile} src={user} alt={"paintdaily"}/>
                   <div className={Style.dropdownContent}>
                       <ul style={{listStyle:'none'}}>
                           <li style={{paddingTop:'35px',marginLeft:'-32px'}}><button onClick={handleLogout} className={Style.LoginBtn}>LogOut</button></li>
@@ -32,16 +34,7 @@ function AdminNavbar (props) {
                       </ul>
                   </div>
               </div>
-
-                        <ul className="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-                            <li><a className="dropdown-item active" href="#">Action</a></li>
-                            <li><a className="dropdown-item" href="#">Another action</a></li>
-                            <li><a className="dropdown-item" href="#">Something else here</a></li>
-                            <li>
-                                <hr className="dropdown-divider"/>
-                            </li>
-                            <li><a className="dropdown-item" href="#">Separated link</a></li>
-                        </ul>
+        </div>
                     </div>
                 </li>
 

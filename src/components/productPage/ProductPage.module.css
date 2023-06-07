@@ -58,7 +58,7 @@
 }
 .prod_review_box{
     margin-top: 6%;
-    margin-left: 2%;
+    margin-left: 4%;
 }
 .prod_weight{
     margin-top: 4%;
@@ -144,7 +144,7 @@ span.total_no_rating{
 }
 .add_comment{
     position: absolute;
-    top: 130%;
+    top: 116%;
     left: 55%;  
 }
 button.add_comment{
@@ -221,9 +221,9 @@ img.prod_rev_img:hover{
     margin-right: 2px;
 }
 .id_counter{
-    position: absolulte;
-    top: 140%;
-    left: 50%;
+    position: absolute;
+    top: 80%;
+    left: 52%;
 }
 .seller_add{
     position: absolute;
@@ -244,8 +244,3 @@ img.prod_rev_img:hover{
 }
 
 
-.id_counter{
-    position: absolute;
-    top: 73%;
-    left: 53%;
-}

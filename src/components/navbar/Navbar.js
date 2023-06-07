@@ -71,7 +71,7 @@ function Navbar() {
             <i class="fa fa-bars"></i>
         </label>
         <ul className={Style.nav}>
-            <li className={Style.nav_item}><Link to="/">Home</Link></li>
+            <li className={Style.nav_item}><Link  to="/">Home</Link></li>
             <div className={Style.dropdown}>
                   <button className={Style.dropbtn}>Categories</button>
                   <div className={Style.dropdown_content}>
@@ -88,7 +88,7 @@ function Navbar() {
             <li className={Style.nav_item}><Link to="/aboutUs">About</Link></li>
             <li className={Style.nav_item}><Link to="/Photos">Photos</Link></li>
             <li className={Style.nav_item}><Link to="/CreateAccount">Login</Link></li>
-            <li style={{listStyle:'none'}}><Link to="/cart" style={{color:'black'}}><img src={cart2} height={'30px'}  alt="Paintdaily"/>{data.length}</Link></li>
+            <li style={{listStyle:'none'}}><Link to="/cart" style={{color:'black', textDecoration:"none"}}><img src={cart2} height={'30px'}  alt="Paintdaily"/>{data.length}</Link></li>
         </ul>
 
 

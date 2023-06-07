@@ -265,6 +265,7 @@ function AddProducts(props) {
 
                 <label htmlFor={"formFile"} className={"form-label"} style={{ marginLeft: '-0.1%', marginBottom: '2%', marginTop: '3%', fontWeight: '600', color: '#3f403f' }}>Product Image</label>
                 <br />
+                <div>
                 <input
                   type="file"
                   className={`form-control-file`}
@@ -272,6 +273,7 @@ function AddProducts(props) {
                   name={"Image"}
                   onChange={handleproductImageChange}
                   required={true} />
+                </div>
               </div>
 
               <div className="form-group" style={{ width: '50%' }}>

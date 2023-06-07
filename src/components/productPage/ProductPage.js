@@ -163,7 +163,6 @@ let [num, setNum]= useState(1);
     </div>
     <div  className={Style.prod_review_box}>
      
-        <button className={Style.add_comment}><Link style={{color: 'black'}} to="/Reviews">Post Review</Link></button>
         <h4 className={Style.comment_section} style={{color:"#000", fontSize:"1.6rem", fontWeight:"600", marginBottom:"5%", marginTop:"6%"}}>Reviews<span className={Style.no_reviews}>{Reviews.length}</span></h4>
    </div>
    <div className={Style.all_reviews}>

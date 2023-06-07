@@ -58,13 +58,13 @@ const PaintingTool = () => {
             <div className={Style.prod} >
                  <Link to={"/productPage"}>
                         <div key={index} style={{width:"80%"}}>
-                        <span className={Style.code_color}>Code: {data.code}</span>
+                        <span className={Style.code_color}>Code: {dta.productColorName}</span>
 
                         <div className={Style.image_box}>
-                            <img className="" src={data.Img}/>
+                            <img className="" src={dta.productImage}/>
                         </div>
                         <div className={Style.prod_title}>
-                            <p style={{color:"Black"}}>{data.description}</p>
+                            <p style={{color:"Black"}}>{dta.productTitle}</p>
                         </div>
                         <div className={Style.desc_box}>
                         <span style={{ color: '#6e6d6a', fontSize: '18px', paddingLeft: '22px', paddingTop: '150px'  }}>{dta.productWeight}</span>

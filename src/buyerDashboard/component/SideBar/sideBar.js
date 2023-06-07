@@ -27,14 +27,16 @@ const SideBar = () => {
                             <div className={selected===index?`${Styled.selected}`:`${Styled.unSelected}`}>
                                 <item.icon/>
                             </div>
-                            <Link className={Styled.itemLinks} to={`${item.link}`}><span className={selected===index?`${Styled.selectedText}`:null} >{item.heading}</span></Link>
+                            <Link style={{textDecoration: 'none'}} className={Styled.itemLinks} to={`${item.link}`}><span className={selected===index?`${Styled.selectedText}`:null} >{item.heading}</span></Link>
                         </div>
                     )
                 })}
             </div>
             <div className={`${Styled.menuItem}`} style={{marginTop:'20px'}}>
-                <a className={Styled.WhatsApp} href={"https://wa.me/923167906557"} target={"_blank"}><UilWhatsapp/>
-                    <span style={{color:'white', marginLeft:'15px'}}>WhatsApp</span>
+                <a style={{textDecoration: 'none'}} className={Styled.WhatsApp} href={"https://wa.me/923167906557"} target={"_blank"}>
+                    <span style={{color:'white'}}><UilWhatsapp/></span>
+                    
+                    <span style={{color:'white', textDecoration: 'none', marginLeft:'15px'}}>WhatsApp</span>
                 </a>
             </div>
         </div>

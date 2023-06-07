@@ -80,15 +80,6 @@ const handleChange = (event) => {
                      <h3 style={{fontSize: '4rem', fontWeight:'bold', color: 'black'}}>Settings</h3>
                  </div>
                  <form style={{marginLeft: '5%', marginRight: '4%', width: '50%'}}>
-                     {/* <h4 style={{
-                         fontSize: '1.3rem',
-                         fontWeight: '600',
-                         color: '#285742',
-                         marginTop: '4%',
-                         marginBottom: '4%'
-                     }}>Update Profile Picture</h4>
-                     <input style={{marginBottom: "4%", marginTop: "2%"}} type="file" className={Styled.uploadbox}
-                            id="exampleFormControlFile1" required={true}/> */}
 
                      <h4 style={{
                          fontSize: '1.3rem',
