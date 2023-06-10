@@ -5,11 +5,7 @@ import {
 
 } from "@iconscout/react-unicons";
 export const SidebarData = [
-    {
-        icon: UilObjectGroup,
-        heading:'Categories',
-        link:'/adminDashboard/categories'
-    },
+
     {
         icon:UilTable,
         heading: 'Seller',

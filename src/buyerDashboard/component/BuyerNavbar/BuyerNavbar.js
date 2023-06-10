@@ -26,9 +26,7 @@ function BuyerNavbar (props) {
                 {JSON.parse(localStorage.getItem("check")) === true?<img className={Style.Profile} src={user} alt={"paintdaily"}/>:null}
                   <div className={Style.dropdownContent}>
                       <ul style={{listStyle:'none'}}>
-                            <li style={{paddingTop:'20px',marginLeft:'-32px'}}><Link style={{color: 'white'}} to={"/buyer_dashboard"}>Dashboard</Link></li>
-                            <li style={{paddingTop:'20px',marginLeft:'-32px'}}><Link style={{color: 'white'}} to={"/"}>Buy Product</Link></li>
-                          <li style={{paddingTop:'20px',marginLeft:'-32px'}}><button style={{color: 'white', backgroundColor:'transparent', border: 'None', fontSize: '18px'}} onClick={handleLogout}>LogOut</button></li>
+                          <li style={{paddingTop:'20px',marginLeft:'-32px'}}><button type='button' className="btn btn-primary" style={{color: 'white', border: 'None', fontSize: '18px'}} onClick={handleLogout}>LogOut</button></li>
                       </ul>
                   </div>
               </div>

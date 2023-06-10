@@ -13,7 +13,7 @@ const SideBar = () => {
         <div className={Styled.Sidebar}>
             {/*{logo}*/}
             <div className={Styled.logo}>
-                <Link to={"/adminDashboard/categories"}><img  className={Styled.Img} src={img}  alt={"PaintDaily"}/></Link>
+                <Link to={"/adminDashboard/seller"}><img  className={Styled.Img} src={img}  alt={"PaintDaily"}/></Link>
             </div>
             {/* menu */}
             <div className={Styled.menu}>

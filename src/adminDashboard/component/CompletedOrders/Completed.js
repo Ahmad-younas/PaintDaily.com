@@ -34,17 +34,10 @@ function Completed() {
                         <div className="card" style={{borderColor:'transparent',boxShadow:'0px 10px 15px -3px rgba(0,0,0,0.1)'}}>
                             <div
                                 className="card-header py-3  flex-row align-items-between justify-content-between">
-                                <h6 className="m-0 font-weight-bold text-primary" style={{fontSize:'x-large',fontWeight:'bold'}}>Completed Orders</h6>
+                                <h6 className="m-0 font-weight-bold" style={{fontSize:'x-large',fontWeight:'bold' , color: 'blue'}}>Completed Orders</h6>
                                 <form
                                     className="d-none d-sm-inline-block  mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                                     <div className="input-group mx-lg-3">
-                                        {/* <input type="text" className="form-control bg-white border-0 small" placeholder="Search for..."
-                                               aria-label="Search" aria-describedby="basic-addon2" style={{boxShadow:'0px 10px 15px -3px rgba(0,0,0,0.1)'}}/>
-                                        <div className="input-group-append">
-                                            <button className="btn btn-primary" type="button">
-                                                <i className="fas fa-search fa-sm"></i>
-                                            </button>
-                                        </div> */}
                                     </div>
                                 </form>
                             </div>
@@ -52,11 +45,11 @@ function Completed() {
                                 <table className="table align-items-center table-hover">
                                     <thead style={{backgroundColor:'#083cc4', color:'white'}}>
                                     <tr>
-                                        <th>Order ID</th>
+                                        <th> ID</th>
                                         <th>UserName</th>
-                                        <th>Product Image</th>
+                                        <th> Image</th>
                                         <th>Product Title</th>
-                                        <th>Order Price</th>
+                                        <th>Price</th>
                                         <th>Details</th>
                                         <th>Status</th>
                                     </tr>
@@ -66,11 +59,11 @@ function Completed() {
                                         <tr>
                                         <td><a style={{color:'black'}} href="#">{currentPosts.id}</a></td>
                                         <td>{currentPosts.userName}</td>
-                                        <td><Avatar src={currentPosts.orderImage} /></td>
+                                        <td><Avatar  src={currentPosts.orderImage} /></td>
                                         <td>{currentPosts.orderTitle}</td>
                                         <td>{currentPosts.orderPrice}</td>
                                         <td><button type="button" onClick={()=>detaildata(currentPosts.id)} className="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Details</button></td>
-                                        <td><button type="button" className="btn btn-danger" disabled>Approved</button></td>
+                                        <td><button type="button" className="btn btn-primary" disabled>Delivered</button></td>
                                     </tr>
                                     ))}
                                     </tbody>

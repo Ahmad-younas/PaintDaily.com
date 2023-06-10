@@ -66,18 +66,11 @@ function Seller (props) {
                         <div className="col-lg-12 mb-4 col-md-6 col-sm-3">
                             <div className="card" style={{borderColor:'transparent',boxShadow:'0px 10px 15px -3px rgba(0,0,0,0.1)'}}>
                                 <div
-                                    className="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    className="card-header py-3 d-flex flex-row align-items-center justify-content-start">
                                     <h6 className="m-0 font-weight-bold text-primary" style={{fontSize:'x-large',fontWeight:'bold'}}> List of Registered Sellers</h6>
                                     <form
                                         className="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                                         <div className="input-group mx-lg-3">
-                                            {/* <input type="text" className="form-control bg-white border-0 small" placeholder="Search for..."
-                                                   aria-label="Search" aria-describedby="basic-addon2" style={{boxShadow:'0px 10px 15px -3px rgba(0,0,0,0.1)'}}/>
-                                            <div className="input-group-append">
-                                                <button className="btn btn-primary" type="button">
-                                                    <i className="fas fa-search fa-sm"></i>
-                                                </button>
-                                            </div> */}
                                         </div>
                                     </form>
                                 </div>
